@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/cdCharacterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Charles Steinhart"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/cdCharacterClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdCharacterName"
+        android:layout_marginTop="100dp"
+        android:ems="6"
+        android:text="Fighter"
+        android:textAlignment="center"
+
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cdCharacterLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdCharacterName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@+id/characterClass"
+        android:ems="5"
+        android:text="Level 8"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cdCharacterRace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdCharacterName"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@+id/cdCharacterLevel"
+        android:ems="6"
+        android:text="Human"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cdSTR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdCharacterClass"
+        android:layout_marginTop="40dp"
+        android:ems="6"
+        android:text="STR"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cdDEX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdCharacterLevel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/characterClass"
+        android:ems="5"
+        android:text="DEX"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cdCON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdCharacterRace"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/cdCharacterLevel"
+        android:ems="6"
+        android:text="CON"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cdSTRNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdSTR"
+        android:layout_marginTop="10dp"
+        android:ems="6"
+        android:text="20"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cdDEXNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdDEX"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/characterClass"
+        android:ems="5"
+        android:text="8"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cdCONNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdCON"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/cdCharacterLevel"
+        android:ems="6"
+        android:text="16"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cdINT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdSTRNum"
+        android:layout_marginTop="40dp"
+        android:ems="6"
+        android:text="INT"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cdWIS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdDEXNum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/characterClass"
+        android:ems="5"
+        android:text="WIS"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cdCHA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdCONNum"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/cdCharacterLevel"
+        android:ems="6"
+        android:text="CHA"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cdINTNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdINT"
+        android:layout_marginTop="10dp"
+        android:ems="6"
+        android:text="10"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cdWISNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdWIS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/characterClass"
+        android:ems="5"
+        android:text="10"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cdCHANum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdCHA"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/cdCharacterLevel"
+        android:ems="6"
+        android:text="14"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+
+
+
+</RelativeLayout>

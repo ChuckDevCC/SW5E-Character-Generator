@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/characterCreate_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/characterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Character Name"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/characterClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/characterName"
+        android:ems="7"
+        android:inputType="textPersonName"
+        android:hint="Class"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/characterLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/characterName"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@+id/characterClass"
+        android:ems="5"
+        android:inputType="textPersonName"
+        android:hint="Level"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/characterRace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/characterName"
+        android:layout_toEndOf="@+id/characterLevel"
+        android:ems="7"
+        android:inputType="textPersonName"
+        android:hint="Race"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/presetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/characterLevel"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/characterClass"
+        android:text="Character Presets" />
+
+    <LinearLayout
+        android:id="@+id/buttonRowOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/presetText"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonVendor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="Vendor" />
+
+        <Button
+            android:id="@+id/buttonTrades"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:text="Pilot/Mechanic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonRowTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRowOne"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSW"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="Sith Warrior" />
+
+        <Button
+            android:id="@+id/buttonSC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:text="Sith Corruptor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonRowThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRowTwo"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonJK"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="Jedi Knight" />
+
+        <Button
+            android:id="@+id/buttonJC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:text="Jedi Consular" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/presetResult"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/buttonRowThree"
+        android:text= "Preset: None"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/presetClear"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/presetResult"
+        android:text= "Clear Preset"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/checkRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/presetClear"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Randomize Stat Distribution For Me" />
+
+    <LinearLayout
+        android:id="@+id/statRowOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkRandom"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/statSTR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:hint="STR"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/statDEX"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:hint="DEX"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/statCON"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:hint="CON"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/statRowTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statRowOne"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/statINT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:hint="INT"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/statWIS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:hint="WIS"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/statCHA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:hint="CHA"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonGen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statRowTwo"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="40dp"
+        android:text="Generate My Character" />
+    <Button
+        android:id="@+id/buttonTake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonGen"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:text="Take me to the Character List" />
+
+</RelativeLayout>
