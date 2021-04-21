@@ -85,7 +85,11 @@ Each window has a respective **Kotlin** and **XML** file, with a *ViewModel* and
 
 ## Usage
 
-![gif](https://i.imgur.com/5dQ9VfI.gif)
+<img src = "https://imgur.com/pDykhm3.gif">
+
+This is a gif of the first page prototype. It allows text entry, a preset selection with updated text field, and a button that randomizes the stats.
+> Note, In the original design it was a checkbox. I like how the button works better as the user can press it multiple times to get stats that
+> they are pleased with before it submits.
 
 # Current Bugs and Limitations
 
