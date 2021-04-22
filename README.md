@@ -91,6 +91,23 @@ This is a gif of the first page prototype. It allows text entry, a preset select
 > Note, In the original design it was a checkbox. I like how the button works better as the user can press it multiple times to get stats that
 > they are pleased with before it submits.
 
+Eventually, it would be able to submit as a database entry utilizing this piece of code:
+
+```kotlin
+data class CharacterSheet(
+    @PrimaryKey val id: UUID = UUID.randomUUID(),
+    var name: String = "",
+    var strength: Int = 12,
+    var dexterity: Int = 13,
+    var constitution: Int = 14,
+    var intelligence: Int = 15,
+    var wisdom: Int = 16,
+    var charisma: Int = 17
+)
+```
+Instead of the place holder int values, it would use the variables displayed on the screen and store in the database. This might mean they would have to
+be strings instead of ints, or be typecast using a `.toInt()` addition.
+
 # Current Bugs and Limitations
 
 - I have some of the database designed, putting use in the SQLite provided by Android Studio, but it is not currently operational.
