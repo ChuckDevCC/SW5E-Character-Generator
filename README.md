@@ -45,9 +45,9 @@ extra features as time cotinued.
 ## Mockup Design
 
 <p float = "left">
-<img src = "https://imgur.com/UGLmahK.png" width = "300">
-<img src = "https://imgur.com/ETXpL4f.png" width = "290" >
-<img src = "https://imgur.com/1UpRmHT.png" width = "293" >
+<img src = "https://imgur.com/UGLmahK.png" width = "250">
+<img src = "https://imgur.com/ETXpL4f.png" width = "240" >
+<img src = "https://imgur.com/1UpRmHT.png" width = "243" >
 </p>
 
 ### Initial Page
